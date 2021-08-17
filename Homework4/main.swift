@@ -10,11 +10,24 @@ import Foundation
 
 // 1. Описать класс Car c общими свойствами автомобилей и пустым методом действия по аналогии с прошлым заданием.
 
-class anyCar {
+class Car {
+    var markAuto: String
+    var colorAuto: String
+    var countPassanger: Int? = nil
     
+    
+    init(markAuto: String, colorAuto: String) {
+        self.markAuto = markAuto
+        self.colorAuto = colorAuto
+        
+    }
+    
+    func wroomWroom () -> () {
+        
+    }
 }
 
-print("hello")
+
 
 // 2. Описать пару его наследников trunkCar и sportСar. Подумать, какими отличительными свойствами обладают эти автомобили. Описать в каждом наследнике специфичные для него свойства.
 
